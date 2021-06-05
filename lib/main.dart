@@ -46,7 +46,12 @@ class _WidgetExampleState extends State<WidgetApp> {
                 )),
             Padding(
                 padding: EdgeInsets.all(15),
-                child: RaisedButton(onPressed: () {}))
+                child: RaisedButton(
+                    child: Row(
+                      children: [Icon(Icons.add), Text('더하기')],
+                    ),
+                    color: Colors.amber,
+                    onPressed: () {}))
           ],
         )),
       ),
