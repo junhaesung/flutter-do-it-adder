@@ -24,12 +24,16 @@ class _WidgetExampleState extends State<WidgetApp> {
         title: Text('Widget Example'),
       ),
       body: Container(
-        child: Center(child: Column(
+        child: Center(
+            child: Column(
           children: <Widget>[
-            Text('flutter'),
-            TextField(),
-            RaisedButton(onPressed: () {
-            })
+            Padding(padding: EdgeInsets.all(15), child: Text('flutter')),
+            Padding(
+                padding: EdgeInsets.only(left: 20, right: 20),
+                child: TextField()),
+            Padding(
+                padding: EdgeInsets.all(15),
+                child: RaisedButton(onPressed: () {}))
           ],
         )),
       ),
