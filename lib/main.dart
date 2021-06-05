@@ -31,7 +31,12 @@ class _WidgetExampleState extends State<WidgetApp> {
         child: Center(
             child: Column(
           children: <Widget>[
-            Padding(padding: EdgeInsets.all(15), child: Text('flutter')),
+            Padding(
+                padding: EdgeInsets.all(15),
+                child: Text(
+                  '결과 : $sum',
+                  style: TextStyle(fontSize: 20),
+                )),
             Padding(
                 padding: EdgeInsets.only(left: 20, right: 20),
                 child: TextField(
