@@ -56,7 +56,12 @@ class _WidgetExampleState extends State<WidgetApp> {
                       children: [Icon(Icons.add), Text('더하기')],
                     ),
                     color: Colors.amber,
-                    onPressed: () {}))
+                    onPressed: () {
+                      setState(() {
+                        int result = int.parse(value1.value.text) + int.parse(value2.value.text);
+                        sum = result.toString();
+                      });
+                    }))
           ],
         )),
       ),
